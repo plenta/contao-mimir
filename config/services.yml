@@ -1,0 +1,17 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+        bind:
+            $mimirConfig:
+                webhook: '%plenta_mimir.webhook%'
+                channel: '%plenta_mimir.channel%'
+                exceptions: '%plenta_mimir.exceptions%'
+                message: '%plenta_mimir.message%'
+                debug: '%plenta_mimir.debug%'
+            $debug: '%kernel.debug%'
+
+    Plenta\Mimir\:
+        resource: ../src/*
+        exclude: ../src/{Entity,Migrations,Resources,Tests}
