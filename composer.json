@@ -1,7 +1,7 @@
 {
   "name": "plenta/contao-mimir",
   "type": "contao-bundle",
-  "description": "Send exceptions within your Contao installation through the Notification Center",
+  "description": "Send exceptions within your Contao installation directly to your Slack workspace.",
   "license": "LGPL-3.0-or-later",
   "authors": [
     {

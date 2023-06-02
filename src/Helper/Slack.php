@@ -93,7 +93,7 @@ class Slack
             return false;
         }
 
-        if (\in_array(\get_class($exception), self::IGNORED_EXCEPTIONS, true) && !\in_array(\get_class($exception), $this->mimirConfig['exceptions'], true)) {
+        if ((\in_array(\get_class($exception), self::IGNORED_EXCEPTIONS, true) || \in_array(\get_class($exception), $this->mimirConfig['exceptions']['blacklist'], true)) && !\in_array(\get_class($exception), $this->mimirConfig['exceptions']['whitelist'], true)) {
             return false;
         }
 
