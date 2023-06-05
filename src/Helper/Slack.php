@@ -62,9 +62,6 @@ class Slack
     protected function sendMessage($msg): void
     {
         $body = ['text' => $msg];
-        if ($this->mimirConfig['channel']) {
-            $body['channel'] = $this->mimirConfig['channel'];
-        }
         $this->client->request('POST', $this->mimirConfig['webhook'], [
             'json' => $body,
         ]);

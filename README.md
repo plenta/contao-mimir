@@ -34,7 +34,6 @@ You can easily configure Mimir through your `parameters.yml`:
 ```yaml
 plenta_mimir:
   webhook: 'YourWebhookURL' # required
-  channel: '#yourChannel' # optional
   exceptions: # optional
     whitelist:
       - 'Full/Exception/Class/Name'
