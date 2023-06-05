@@ -6,7 +6,6 @@ services:
         bind:
             $mimirConfig:
                 webhook: '%plenta_mimir.webhook%'
-                channel: '%plenta_mimir.channel%'
                 exceptions: '%plenta_mimir.exceptions%'
                 message: '%plenta_mimir.message%'
                 debug: '%plenta_mimir.debug%'
