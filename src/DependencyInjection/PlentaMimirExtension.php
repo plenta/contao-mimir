@@ -27,7 +27,6 @@ class PlentaMimirExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
         $container->setParameter('plenta_mimir.webhook', $config['webhook']);
-        $container->setParameter('plenta_mimir.channel', $config['channel']);
         $container->setParameter('plenta_mimir.exceptions', $config['exceptions']);
         $container->setParameter('plenta_mimir.message', $config['message']);
         $container->setParameter('plenta_mimir.debug', $config['debug']);
