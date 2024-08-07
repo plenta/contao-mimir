@@ -96,4 +96,15 @@ class Slack
 
         return true;
     }
+
+    /**
+     * @param array $mimirConfig
+     * @return void
+     *
+     * @Internal
+     */
+    public function setMimirConfig(array $mimirConfig): void
+    {
+        $this->mimirConfig = $mimirConfig;
+    }
 }
