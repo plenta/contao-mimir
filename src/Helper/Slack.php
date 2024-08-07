@@ -101,7 +101,7 @@ class Slack
      * @param array $mimirConfig
      * @return void
      *
-     * @Internal
+     * @internal
      */
     public function setMimirConfig(array $mimirConfig): void
     {
