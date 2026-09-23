@@ -75,9 +75,9 @@ class Slack
             'exception_file' => $exception->getFile(),
             'exception_line' => $exception->getLine(),
             'exception_trace' => $exception->getTraceAsString(),
-            'exception_url' => $this->requestStack->getCurrentRequest()->getUri(),
+            'exception_url' => $this->requestStack->getCurrentRequest()?->getUri(),
             'exception_class' => \get_class($exception),
-            'request_referer' => $this->requestStack->getCurrentRequest()->headers->get('referer'),
+            'request_referer' => $this->requestStack->getCurrentRequest()?->headers->get('referer'),
         ]);
     }
 
